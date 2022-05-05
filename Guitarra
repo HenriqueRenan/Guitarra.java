@@ -1,0 +1,84 @@
+Pacote uni ;
+
+ classe  pública Guitarra
+{
+
+    private  string  numeroSerie , fabricante , modelo , tipo , madeira ;
+     duplo  preco privado ;
+
+    // Criação do construtor da classe Guitarra
+    público  Guitarra (
+            string  numeroSerie , fabricante de strings  ,
+             modelo de string , tipo de string  ,
+            string  madeira , double  preco )
+    {
+        isso . numeroSerie  =  numeroSerie ;
+        isso . fabricante  =  fabricante ;
+        isso . modelo  =  modelo ;
+        isso . tipo  =  tipo ;
+        isso . madeira  =  madeira ;
+        isso . preco  =  preco ;
+    }
+     string  pública getNumeroSerie ()
+    {
+        retornar  numeroSerie ;
+    }
+    public  void  setNumeroSerie ( string  numeroSerie )
+    {
+        isso . numeroSerie  =  numeroSerie ;
+    }
+     string  pública getFabricante ()
+    {
+        retornar  fabricante ;
+    }
+    public  void  setFabricante ( string  fabricante )
+    {
+        isso . fabricante  =  fabricante ;
+    }
+     string  pública getModelo ()
+    {
+         modelo de retorno ;
+    }
+     string  pública getTipo ()
+    {
+         tipo de retorno ;
+    }
+    public  void  setTipo ( string  tipo )
+    {
+        isso . tipo  =  tipo ;
+    }
+     string  pública getMadeira ()
+    {
+        retornar  madeira ;
+    }
+    public  void  setMadeira ( string  madeira )
+    {
+        isso . madeira  =  madeira ;
+    }
+    public  double  getPreco ()
+    {
+        retorno  preco ;
+    }
+    public  void  setPreco ( double  preco )
+    {
+        isso . preco  =  preco ;
+    }
+
+    // O método main() é o método principal da classe
+    public  static  void  main ( string [] args )
+    {
+        // instanciamos um objeto chamado "minhaGuitarra" que será do tipo "Guitarra"
+        // Os valores passados  sao pelos construtor da classe  para criar um objeto usado.
+        
+        Guitarra  minhaGuitarra  =  new  Guitarra ( " 01020304 " , " Fender " , " Telecaster " , " Elétrica " , " Mogno " , 1500 );
+        
+        // testando os dados da classe, imprimindo a saída simples no terminal
+        
+        Sistema . fora . println ( " Número de Série: "  + ( minhaGuitarra . getNumeroSerie ()));
+        Sistema . fora . println ( " Madeira: "  + ( minha Guitarra . getMadeira ()));
+        Sistema . fora . println ( " Preço: "  + ( minha Guitarra . getPreco ()));
+        Sistema . fora . println ( " Tipo: "  + ( minha Guitarra . getTipo ()));
+        Sistema . fora . println ( " Fabricante: "  + ( minhaGuitarra . getFabricante ()));
+        Sistema . fora . println ( " Modelo: "  + ( minha Guitarra . getModelo ()));
+    }
+}
